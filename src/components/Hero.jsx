@@ -26,7 +26,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-screen sl:h-screen sm:h-[50rem] mx-auto">
+    <section
+      id="home"
+      className="relative w-full h-screen sl:h-screen sm:h-[50rem] mx-auto"
+    >
       <div
         className={`${styles.paddingX} absolute inset-0
         mx-auto flex flex-col-reverse sl:flex-row sl:top-[0px] top-[80px] justify-center items-center gap-6 sl:gap-[8rem]`}
