@@ -5,9 +5,8 @@ import {
   fadeIn,
   textContainer,
   textVariant,
-  textVariant2,
 } from "../utils/motion";
-import { description, services } from "../constants";
+import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 
 // eslint-disable-next-line react/prop-types
@@ -44,11 +43,13 @@ const About = () => {
         variants={textContainer}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        {Array.from(description).map((letter, index) => (
-          <motion.span variants={textVariant2} key={index}>
-            {letter}
-          </motion.span>
-        ))}
+        I'm Frontend Web Developer with experience in JavaScript,TypeScript and
+        expertise in React.js and Next.js. Committed to continuous improvement,
+        I focus on refining my skills and personality to acquire new
+        professional abilities. Passionate about creating engaging interfaces, I
+        stay updated on the latest trends in React.js and Next.js. My goal is to
+        seamlessly integrate into a team, contributing knowledge to deliver
+        high-quality software solutions.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
